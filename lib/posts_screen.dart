@@ -1,7 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:first_class/provider/posts_provider.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 import 'model/post_response.dart';
 

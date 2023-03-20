@@ -5,14 +5,9 @@ import 'package:provider/provider.dart';
 
 void main() {
   runApp(
-    MultiProvider(
-      providers: [
-        ChangeNotifierProvider(create: (_) => PostsProvider())
-      ],
-      child: MaterialApp(
-        theme: ThemeData(primarySwatch: Colors.brown),
-        home: PostsScreen(),
-      ),
+    MaterialApp(
+      theme: ThemeData(primarySwatch: Colors.brown),
+      home: PostsScreen(),
     ),
   );
 }

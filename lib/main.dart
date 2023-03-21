@@ -1,5 +1,5 @@
-import 'package:first_class/posts_screen.dart';
-import 'package:first_class/provider/posts_provider.dart';
+import 'package:first_class/provider/color_provider.dart';
+import 'package:first_class/ui/choose_color_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -7,12 +7,11 @@ void main() {
   runApp(
     MultiProvider(
       providers: [
-        ChangeNotifierProvider(create: (_) => PostsProvider())
+        ChangeNotifierProvider(create: (_)=> ColorProvider())
       ],
-      child: MaterialApp(
-        theme: ThemeData(primarySwatch: Colors.brown),
-        home: PostsScreen(),
-      ),
+      child: const ChooseColorScreen()
     ),
   );
 }
+
+
